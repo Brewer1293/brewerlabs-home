@@ -3,6 +3,14 @@ import "./App.css";
 
 const projects = [
   {
+    name: "Miracle One Recruitment Lab",
+    description: "Private in-browser FM24 role suitability scouting for my 4-2DM-3-1 tactic.",
+    url: "/fm-recruitment/",
+    status: "Live",
+    type: "Scouting",
+    icon: FlaskConical,
+  },
+  {
     name: "Football Data App",
     description: "Football goal-market analysis and value modelling.",
     url: "https://football-data-app.brewer1293.workers.dev/",

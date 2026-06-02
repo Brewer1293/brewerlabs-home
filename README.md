@@ -1,4 +1,21 @@
-# React + Vite
+# Brewer Labs Home
+
+Project index for `home.brewerlabs.uk`.
+
+## Miracle One Recruitment Lab
+
+The private browser-side FM24 scorer lives in `fm-recruitment` and is published
+at `/fm-recruitment/`. The root build installs and builds the nested static
+Next.js app, copies its export into `public/fm-recruitment`, then builds the
+Vite index.
+
+```powershell
+npm run build
+```
+
+Cloudflare Pages should publish `dist`.
+
+## Vite notes
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
