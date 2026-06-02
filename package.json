@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm --prefix fm-recruitment ci && npm --prefix fm-recruitment run build && node scripts/sync-fm-recruitment.mjs && vite build",
+    "build": "npm --prefix fm-recruitment ci && NEXT_PUBLIC_BASE_PATH=/fm-recruitment npm --prefix fm-recruitment run build && node scripts/sync-fm-recruitment.mjs && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
