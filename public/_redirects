@@ -1,0 +1,2 @@
+/fm-recruitment https://fmapp.brewerlabs.uk/ 301
+/fm-recruitment/* https://fmapp.brewerlabs.uk/:splat 301

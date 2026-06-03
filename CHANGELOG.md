@@ -15,6 +15,7 @@ Going forward, update this file before each live push to `main`, then verify the
 - Split FM Recruitment Lab into its own repository and Pages project, leaving this repo as the project index only.
 - Updated the FM Recruitment Lab tile to link to `https://fmapp.brewerlabs.uk/`.
 - Removed the nested FM app build/sync step from the home page build.
+- Redirected old `/fm-recruitment` URLs to `https://fmapp.brewerlabs.uk/`.
 - `96427bf` Add this project changelog and document the live-push update rule.
 - `102bef2` Add player profile ranking navigation with up/down controls and keyboard arrows.
 - `9ceb93d` Improve Scouting filter readability.
