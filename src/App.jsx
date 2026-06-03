@@ -5,7 +5,7 @@ const projects = [
   {
     name: "FM Recruitment Lab",
     description: "Private in-browser FM24 role suitability scouting for my 4-2DM-3-1 tactic.",
-    url: "/fm-recruitment/",
+    url: "https://fmapp.brewerlabs.uk/",
     status: "Live",
     type: "Scouting",
     icon: FlaskConical,
