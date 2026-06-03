@@ -17,6 +17,7 @@ h1 span { color: #8f9097; }
 .section-heading > span { color: var(--muted); font-size: 12px; }
 .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
 .project-card { position: relative; display: flex; min-height: 260px; flex-direction: column; justify-content: space-between; gap: 24px; padding: 22px; overflow: hidden; border: 1px solid var(--line); border-radius: 17px; background: linear-gradient(145deg, rgba(255,255,255,.045), rgba(255,255,255,.018)); transition: border-color 160ms ease, background 160ms ease, transform 160ms ease; }
+.project-card.clickable { color: inherit; cursor: pointer; text-decoration: none; }
 .project-card:hover { border-color: rgba(249,115,22,.52); background: rgba(255,255,255,.06); transform: translateY(-3px); }
 .project-card.featured::after { position: absolute; top: 0; right: 0; width: 72px; height: 72px; content: ""; background: radial-gradient(circle at 100% 0, rgba(249,115,22,.23), transparent 68%); }
 .project-card-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }

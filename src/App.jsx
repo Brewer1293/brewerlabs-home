@@ -1,4 +1,4 @@
-import { ArrowUpRight, BarChart3, CircleGauge, Database, FlaskConical, Server } from "lucide-react";
+import { BarChart3, CircleGauge, Database, FlaskConical, Server } from "lucide-react";
 import "./App.css";
 
 const projects = [
@@ -46,9 +46,8 @@ const projects = [
 function ProjectCard({ project }) {
   const Icon = project.icon;
   const live = project.status === "Live";
-
-  return (
-    <article className={`project-card${project.featured ? " featured" : ""}`}>
+  const content = (
+    <>
       <div className="project-card-top">
         <span className="project-icon"><Icon size={18} /></span>
         <span className={`status ${live ? "live" : "muted"}`}>{project.status}</span>
@@ -58,15 +57,12 @@ function ProjectCard({ project }) {
         <h2>{project.name}</h2>
         <p className="project-description">{project.description}</p>
       </div>
-      {live ? (
-        <a className="project-link" href={project.url} target="_blank" rel="noreferrer">
-          Open project <ArrowUpRight size={16} />
-        </a>
-      ) : (
-        <span className="project-link unavailable">In development</span>
-      )}
-    </article>
+      {!live && <span className="project-link unavailable">In development</span>}
+    </>
   );
+
+  if (live) return <a className={`project-card clickable${project.featured ? " featured" : ""}`} href={project.url} target="_blank" rel="noreferrer">{content}</a>;
+  return <article className={`project-card${project.featured ? " featured" : ""}`}>{content}</article>;
 }
 
 function App() {
