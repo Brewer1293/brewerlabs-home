@@ -14,6 +14,12 @@ dist-ssr
 .next
 out
 public/fm-recruitment
+facepack/
+logopack/
+graphics/
+local-graphics/
+r2-upload/
+*.zip
 
 # Editor directories and files
 .vscode/*
