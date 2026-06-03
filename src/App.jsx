@@ -3,7 +3,7 @@ import "./App.css";
 
 const projects = [
   {
-    name: "Miracle One Recruitment Lab",
+    name: "FM Recruitment Lab",
     description: "Private in-browser FM24 role suitability scouting for my 4-2DM-3-1 tactic.",
     url: "/fm-recruitment/",
     status: "Live",
