@@ -4,10 +4,15 @@ This log tracks user-facing changes to Brewerlabs Home and FM Recruitment Lab.
 
 Going forward, update this file before each live push to `main`, then verify the live app version badge after Cloudflare Pages deploys.
 
-## Unreleased - Local `fm-local-tweaks`
+## Unreleased
 
-These changes are present locally but are not all on the current live `main` branch yet.
+- No unreleased changes.
 
+## Live History
+
+### 2026-06-03
+
+- `96427bf` Add this project changelog and document the live-push update rule.
 - `102bef2` Add player profile ranking navigation with up/down controls and keyboard arrows.
 - `9ceb93d` Improve Scouting filter readability.
 - `ad1a7c1` Add apps, goals and assists to Scouting, rename profile notes into strengths/weaknesses.
@@ -20,11 +25,6 @@ These changes are present locally but are not all on the current live `main` bra
 - `8f4321f` Make player profile more responsive.
 - `4a7b846` Hide player profile scrollbars.
 - `fe7e4b1` Move validation report into Settings.
-
-## Live History
-
-### 2026-06-03
-
 - `2a94a5f` Add STAG minutes summary to the live build.
 - `934dc91` Expand the import page layout.
 - `83c8ee2` Upgrade the comparison view.
@@ -82,4 +82,3 @@ These changes are present locally but are not all on the current live `main` bra
 
 - `b2eb6b4` Redesign the Brewer Labs project homepage.
 - `bd62aae` Create the initial Brewer Labs homepage.
-
