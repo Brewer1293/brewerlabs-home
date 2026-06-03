@@ -13,6 +13,7 @@ Project index for `home.brewerlabs.uk`, including the FM Recruitment Lab app.
 - `fm-recruitment/` - static Next.js FM24 recruitment app.
 - `scripts/sync-fm-recruitment.mjs` - copies the exported FM app into `public/fm-recruitment` before the root Vite build.
 - `public/` - static files published by the root site.
+- `CHANGELOG.md` - release/change history. Update this before each live push.
 
 ## Local Development
 
@@ -52,3 +53,5 @@ Cloudflare Pages should publish `dist` from the `main` branch.
 Push `main` to GitHub. Cloudflare Pages is connected to the repository and deploys automatically to `home.brewerlabs.uk`.
 
 The FM app includes a small version badge in the bottom-right corner so the live build can be checked after a deployment.
+
+Before each live push, update `CHANGELOG.md` with the changes being released.
