@@ -1,33 +1,54 @@
-# Brewer Labs Home
+# Brewerlabs Home
 
-Project index for `home.brewerlabs.uk`.
+Project index for `home.brewerlabs.uk`, including the FM Recruitment Lab app.
 
-## Miracle One Recruitment Lab
+## Live URLs
 
-The private browser-side FM24 scorer lives in `fm-recruitment` and is published
-at `/fm-recruitment/`. The root build installs and builds the nested static
-Next.js app, copies its export into `public/fm-recruitment`, then builds the
-Vite index.
+- Project index: `https://home.brewerlabs.uk`
+- FM Recruitment Lab: `https://home.brewerlabs.uk/fm-recruitment/`
 
-```powershell
+## Repository Layout
+
+- `src/` - Vite/React project index shown at the root domain.
+- `fm-recruitment/` - static Next.js FM24 recruitment app.
+- `scripts/sync-fm-recruitment.mjs` - copies the exported FM app into `public/fm-recruitment` before the root Vite build.
+- `public/` - static files published by the root site.
+
+## Local Development
+
+Root project index:
+
+```bash
+npm install
+npm run dev
+```
+
+FM Recruitment Lab:
+
+```bash
+npm --prefix fm-recruitment install
+npm --prefix fm-recruitment run dev -- --hostname 127.0.0.1 --port 4175
+```
+
+## Production Build
+
+Cloudflare Pages runs the root build:
+
+```bash
 npm run build
 ```
 
-Cloudflare Pages should publish `dist`.
+That command:
 
-## Vite notes
+1. Installs the nested FM app dependencies.
+2. Builds the FM app with `NEXT_PUBLIC_BASE_PATH=/fm-recruitment`.
+3. Syncs the static FM export into `public/fm-recruitment`.
+4. Builds the root Vite project into `dist`.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Cloudflare Pages should publish `dist` from the `main` branch.
 
-Currently, two official plugins are available:
+## Deployment
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Push `main` to GitHub. Cloudflare Pages is connected to the repository and deploys automatically to `home.brewerlabs.uk`.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The FM app includes a small version badge in the bottom-right corner so the live build can be checked after a deployment.
