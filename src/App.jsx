@@ -1,4 +1,4 @@
-import { BarChart3, CircleGauge, Database, FlaskConical, Server } from "lucide-react";
+import { BarChart3, BusFront, CircleGauge, Database, FlaskConical, Server } from "lucide-react";
 import "./App.css";
 
 const projects = [
@@ -9,6 +9,14 @@ const projects = [
     status: "Live",
     type: "Scouting",
     icon: FlaskConical,
+  },
+  {
+    name: "Bus Watch",
+    description: "Live Route 5 commute tracker for Ryelands Park to Middlesbrough Bus Station.",
+    url: "https://busapp.brewerlabs.uk/",
+    status: "Live",
+    type: "Transport",
+    icon: BusFront,
   },
   {
     name: "Football Data App",
