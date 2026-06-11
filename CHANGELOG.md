@@ -6,7 +6,7 @@ Going forward, update this file before each live push to `main`, then verify the
 
 ## Unreleased
 
-- No unreleased changes.
+- Point the Football Data App project card at `https://data.brewerlabs.uk/`.
 
 ## Live History
 

@@ -21,7 +21,7 @@ const projects = [
   {
     name: "Football Data App",
     description: "Football goal-market analysis and value modelling.",
-    url: "https://football-data-app.brewer1293.workers.dev/",
+    url: "https://data.brewerlabs.uk/",
     status: "Live",
     type: "Model",
     icon: BarChart3,
